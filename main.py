@@ -9,7 +9,7 @@ def main():
     status = muroran_status.status_getter()
 
     if status is not None:
-        line.message_broadcast('TEST', LINE_CHANNEL_ACCESS_TOKEN)
+        line.message_broadcast(status, LINE_CHANNEL_ACCESS_TOKEN)
     
     return
 
