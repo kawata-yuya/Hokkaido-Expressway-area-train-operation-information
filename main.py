@@ -10,7 +10,7 @@ LAST_STATUS_CHECK_SECRET_URL = sys.argv[2]
 def main():
     status = muroran_status.status_getter()
 
-    info_changed = check_info_change.check(status, LAST_STATUS_CHECK_URL)
+    info_changed = check_info_change.check(status, LAST_STATUS_CHECK_SECRET_URL)
     
     if info_changed:
         line.message_broadcast(status, LINE_CHANNEL_ACCESS_TOKEN)
