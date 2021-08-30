@@ -20,16 +20,11 @@ def status_getter():
         br.replace_with("\n")
 
     data = soup.find('div', class_="mainbodyInner").text
-
-    if data.replace('\n', '') == "※観光列車の運転見合わせに関する詳細については、こちらをご確認ください。※土休日の運休及び特急列車の曜日運休追加に関する詳細については、こちらをご確認ください。 ":
-        return None
     
-    else:
-        text = data.replace('\n\n\n', '\n\n')[86:]
-        if len(text) > 0:
-            return text + url
-        else:
-            return 'Error'
+
+    text = data.replace('\n\n\n', '\n\n')[123:]
+
+    return text + url
 
 
 if __name__ == '__main__':

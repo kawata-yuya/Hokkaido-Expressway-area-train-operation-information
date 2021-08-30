@@ -33,4 +33,4 @@ jobs:
       - name: Run script
         run: |
           # main.pyの実行
-          python main.py ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          python main.py ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }} ${{ secrets.LAST_STATUS_CHECK_SECRET_URL }}
