@@ -4,10 +4,8 @@ name: test_line_notify
 # 実行タイミング
 on:
  schedule:
-   - cron: '00 03 * * *'
-   - cron: '00 06 * * *'
-   - cron: '00 12 * * *'
-   - cron: '00 21 * * *'
+   - cron: '00/10 03-21 * * *'
+
  push:
 
 # 実行内容
