@@ -22,7 +22,7 @@ def status_getter():
     data = soup.find('div', class_="mainbodyInner").text
     
 
-    text = data.replace('\n\n\n', '\n\n')[123:]
+    text = data.replace('\n\n\n', '\n\n')
 
     return text + url
 
