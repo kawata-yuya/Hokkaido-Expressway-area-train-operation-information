@@ -1,5 +1,5 @@
 # ワークフロー名
-name: test_line_notify
+name: check_and_send_data
 
 # 実行タイミング
 on:
@@ -27,7 +27,7 @@ jobs:
           # pip更新
           python -m pip install --upgrade pip
           # 必要なパッケージインストール
-          # pip install bs4
+          pip install bs4
           pip install requests
       - name: Run script
         run: |
