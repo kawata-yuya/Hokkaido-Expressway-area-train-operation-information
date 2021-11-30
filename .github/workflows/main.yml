@@ -1,5 +1,5 @@
 # ワークフロー名
-name: test_line_notify
+name: check_and_send_data
 
 # 実行タイミング
 on:
