@@ -4,8 +4,8 @@ name: check_and_send_data
 # 実行タイミング
 on:
  schedule:
-   - cron: '00/10 00-13 * * *'
-   - cron: '00/10 20-23 * * *'
+   - cron: '00/20 00-13 * * *'
+   - cron: '00/20 20-23 * * *'
 
  push:
 
