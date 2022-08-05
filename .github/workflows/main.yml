@@ -3,6 +3,7 @@ name: check_and_send_data
 
 # 実行タイミング
 on:
+ workflow_dispatch:
  schedule:
    - cron: '00/30 00-13 * * *'
    - cron: '00/30 20-23 * * *'
