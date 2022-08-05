@@ -4,6 +4,9 @@ name: check_and_send_data
 # 実行タイミング
 on:
  workflow_dispatch:
+   types:
+     - my-custom-type
+
  schedule:
    - cron: '00/30 00-13 * * *'
    - cron: '00/30 20-23 * * *'
